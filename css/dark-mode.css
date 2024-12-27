@@ -1,0 +1,46 @@
+[data-theme="dark"] {
+    --primary-color: #64ffda;
+    --background-color: #0a192f;
+    --text-color: #ffffff;
+    --secondary-color: #112240;
+    --timeline-color: #2d3952;
+}
+
+.theme-switch {
+    margin-left: 1rem;
+}
+
+.theme-label {
+    cursor: pointer;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.theme-label i {
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .fa-sun {
+    display: none;
+}
+
+[data-theme="light"] .fa-moon {
+    display: none;
+}
+
+#theme-toggle {
+    display: none;
+}
+
+.language-switch button {
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--text-color);
+}
+
+.language-switch button:hover {
+    background: var(--primary-color);
+    color: var(--background-color);
+}
